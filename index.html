@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="searchBox">
+      <input type="text" class="locationInp" placeholder="Enter Your Location">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="locationBox">
+      <i id="location" class="fa-solid fa-location-dot"></i>
+      <h2 class="locationPara">City</h2>
+    </div>
+    <div class="centerBox">
+      <img src="/Weather App/images/clear.jpeg">
+    </div>
+    <div class="tempBox">
+      <h2>0<sup>&deg;C</sup></h2>
+      <p class="weatherPara">weather</p>
+    </div>
+    <div class="weatherInfoBox">
+      <div class="column">
+
+        <div class="box">
+          <i class="fa-solid fa-droplet"></i>
+          <div class="sideBox">
+            <span class="humidityPara">0%</span>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-temperature-arrow-up"></i>
+          <div class="sideBox">
+            <span class="maxTemp">0<sup>&deg;C</sup></span>
+            <p>Max Temperature</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box">
+          <i class="fa-solid fa-wind"></i>
+          <div class="sideBox">
+            <span class="windPara">0Km/Hr</span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-temperature-arrow-down"></i>
+          <div class="sideBox">
+            <span class="minTemp">0<sup>&deg;C</sup></span>
+            <p>Min Temperature</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
