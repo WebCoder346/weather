@@ -34,19 +34,19 @@ function output(city) {
         maxTemp.innerHTML = `${Math.floor(data.main.temp_max-273.15)}<sup>&deg;C</sup>`;
         minTemp.innerHTML = `${Math.floor(data.main.temp_min-273.15)}<sup>&deg;C</sup>`;
     if (description == "clear sky" || description == "haze") {
-      img.src = "/Weather App/images/clear.jpeg";
+      img.src = "clear.jpeg";
     }
     else if (description == "overcast clouds") {
-      img.src = "/Weather App/images/overcast.jpeg";
+      img.src = "overcast.jpeg";
     }
     else if (description == "few clouds" || description == "scattered clouds" || description.includes("clouds")) {
-      img.src = "/Weather App/images/few.jpeg";
+      img.src = "few.jpeg";
     }
     else if (description.includes("rain")) {
-      img.src = "/Weather App/images/rain.jpeg";
+      img.src = "rain.jpeg";
     }
     else {
-      img.src = "/Weather App/images/few.jpeg";
+      img.src = "few.jpeg";
     }
 
   }).catch((e) => {
@@ -59,7 +59,7 @@ window.onload = () => {
 }
 
 function notFound() {
-  img.src = "/Weather App/images/notFound.jpeg";
+  img.src = "notFound.jpeg";
   locationPara.textContent = inp.value;
   document.querySelector(".weatherInfoBox").style.display = "none";
   document.querySelector(".tempBox").style.display = "none";
